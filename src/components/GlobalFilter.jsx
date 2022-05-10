@@ -11,10 +11,12 @@ const SearchContainer = styled.div`
 `
 const SearchText = styled.h2`
     text: gray;
-    margin: 0 auto;
+    
 `
 const Input = styled.input`
- height: 8px;
+ margin: 105px 0 auto;
+ height: 10px;
+ width: 340px;
  border: 1px solid gray;
  border-radius: 10px;
  outline: none;
@@ -32,10 +34,10 @@ export function GlobalFilter({
     }, 300);
 
     return <SearchContainer>
-        <SearchText>Buscar</SearchText>
+        
         <Input value={value || ""} onChange={(e)=>{
             setValue(e.target.value);
             onChange(e.target.value);
-        }} placeholder={`${count} records...`}/>
+        }} placeholder={`🔎 Busca entre estas ${count} canciones... `}/>
     </SearchContainer>
 }

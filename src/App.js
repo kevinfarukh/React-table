@@ -2,14 +2,15 @@ import './App.css';
 import React from 'react';
 import {Products} from './components/Table';
 import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <h1>Hello</h1>
-      <h2>Tabla</h2> 
+      <Header /> 
       <Products/>
+      <Footer />
     </div>
   );
 }

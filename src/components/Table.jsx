@@ -4,27 +4,59 @@ import axios from 'axios'
 import { useGlobalFilter, useSortBy, useTable} from 'react-table'
 import { GlobalFilter } from "./GlobalFilter";
 import dataBase from '../components/db.json'
+import { ReactPropTypes } from "react";
 
 const Table = styled.table`
+color: white;
 margin: 0 auto;
-border: 1px solid black;
+border: none;
+border-radius: 5px;
 box-shadow: 0 0 10px gray;
-background-color: orange;
+background-color: #000;
+opacity: 0.93;
+@media (max-width: 668px) {
+    width: 100%;
+}
 
 `
 const TableHead = styled.thead`
-padding: 10px;
 margin: 0 auto;
-background-color: #f5f5f5;
+background-color: #444;
+@media (max-width: 668px) {
+    @media (max-width: 668px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    @media (max-width: 540px) {
+        font-size: 0.3rem;s
+    }
+    @media (max-width: 380px) {
+        justify-content: left;
+    }
+}
 `
 
 const TableRow = styled.tr`
-
+border-bottom: 1px solid gray;
+@media (max-width: 668px) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 540px) {
+    font-size: 0.6rem;
+    
+}
+@media (max-width: 380px) {
+    justify-content: left;
+}
 `
 
 const TableHeader = styled.th`
+padding: 8px 4px;
 
-padding: 2px;
 `
 
 const TableBody = styled.tbody`
@@ -33,14 +65,11 @@ const TableBody = styled.tbody`
 `
 
 const TableData = styled.td`
-border: solid 1px gray;
+border-bottom: solid 1px #333;
 padding: 5px;
 
 `
-const Button = styled.button`
-    padding: 5px;
-    text: black;
-`
+
 
 export function Products(props) {
     const[products, setProducts] = useState([]);
@@ -91,8 +120,8 @@ export function Products(props) {
             accessor: "price"
         },
         {
-            Header: "Discount",
-            accessor: "discount"
+            Header: "Amount",
+            accessor: "amount"
         }
     ], []);
 
@@ -110,15 +139,7 @@ export function Products(props) {
     const tableHooks = (hooks) =>{
         hooks.visibleColumns.push((columns)=>[
             ...columns,
-            {
-                id: "edit",
-                Header: "Edit",
-                Cell: ({row}) => (
-                    <Button onClick={()=> alert('Editing: '+ row.values.price)}>
-                        Edit
-                    </Button>
-                )
-            }
+            
         ])
     }
 
@@ -141,7 +162,7 @@ export function Products(props) {
             <TableRow{...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column)=>(
                 <TableHeader{...column.getHeaderProps(column.getSortByToggleProps())}>{column.render("Header")}
-                {column.isSorted ? (column.isSortedDesc ? " 🔽" : " 🔼") : ""}
+                {column.isSorted ? (column.isSortedDesc ? "  ↓" : " ↑") : ""}
                 </TableHeader>
             ))}
             </TableRow>
@@ -165,3 +186,4 @@ export function Products(props) {
     </>
     )
 }
+
