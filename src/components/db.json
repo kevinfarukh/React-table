@@ -1,0 +1,505 @@
+[
+    {
+        "id": "1",
+        "song": "Sweet Child o mine",
+        "artist": "Guns N Roses",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "2",
+        "song": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "3",
+        "song": "Hotel California",
+        "artist": "Eagles",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "4",
+        "song": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "5",
+        "song": "come as you are",
+        "artist": "Nirvana",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "6",
+        "song": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "7",
+        "song": "In Bloom",
+        "artist": "Nirvana",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "8",
+        "song": "Lithium",
+        "artist": "Nirvana",
+        "genre": "Rock",
+        "duration": "3:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "9",
+        "song": "Just the way you are",
+        "artist": "Bruno Mars",
+        "genre": "Pop",  
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "10",
+        "song": "24K Magic",
+        "artist": "Bruno Mars",
+        "genre": "Pop",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "11",
+        "song": "Im yours",
+        "artist": "Jason Mraz",
+        "genre": "Pop",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "12",
+        "song": "Im not the one",
+        "artist": "Jason Mraz",
+        "genre": "Pop",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "13",  
+        "song": "We will rock you",
+        "artist": "Queen",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000"
+    },
+    {
+        "id": "14",
+        "song": "We are the champions",
+        "artist": "Queen",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "15",  
+        "song": "We are the world",
+        "artist": "Michael Jackson",  
+        "genre": "Pop",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "16",
+        "song": "Beat it",
+        "artist": "Michael Jackson",
+        "genre": "Pop",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "17",
+        "song": "Let it be",
+        "artist": "Beatles",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "18",
+        "song": "Hey Jude",
+        "artist": "The Beatles",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "19",
+        "song": "I will always love you",
+        "artist": "John Lennon",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "30000",
+        "discount": "20"
+    },
+    {
+        "id": "20",
+        "song": "Imagine",
+        "artist": "John Lennon",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "36000",
+        "discount": "20"
+    },
+    {
+        "id": "21",
+        "song": "I want to hold your hand",
+        "artist": "John Lennon",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "37000",
+        "discount": "20"
+    },
+    {
+        "id": "22",
+        "song": "All you need is love",
+        "artist": "The Beatles",
+        "genre": "Rock",
+        "duration": "4:00",
+        "available": "Yes",
+        "price": "38000",
+        "discount": "20"
+    },
+    {
+        "id": "23",
+        "song": "Viva la vida",
+        "artist": "Coldplay",
+        "genre": "Pop",
+        "duration": "3:40",
+        "available": "Yes",
+        "price": "38000",
+        "discount": "40"
+    },
+    {
+        "id": "24",
+        "song": "A Sky Full of Stars",
+        "artist": "Coldplay",
+        "genre": "Pop",
+        "duration": "3:40",
+        "available": "Yes",
+        "price": "38000",
+        "discount": "40"
+    },
+    {
+        "id": "25",
+        "song": "Dont cry",
+        "artist": "Guns N Roses",
+        "genre": "Rock",
+        "duration": "3:40",
+        "available": "Yes",
+        "price": "38000",
+        "discount": "40"
+    },
+    {
+        "id": "26",
+        "song": "Paradise city",
+        "artist": "Guns N Roses",
+        "genre": "Rock",
+        "duration": "3:40",
+        "available": "Yes",
+        "price": "38000",
+        "discount": "40"
+    },
+    {
+        "id": "27",
+        "song": "Welcome to the jungle",
+        "artist": "Guns N Roses",
+        "genre": "Rock",
+        "duration": "3:40",
+        "available": "Yes",
+        "price": "38000",
+        "discount": "40"
+    },
+    {
+        "id": "28",
+        "song":"one",
+        "artist":"Metallica",
+        "genre":"Metal",
+        "duration":"4:40",
+        "available":"Yes",
+        "price":"35000",
+        "discount":"40"
+    },
+    {
+        "id": "29",
+        "song":"Master of puppets",
+        "artist":"Metallica",
+        "genre":"Metal",
+        "duration":"4:40",
+        "available":"Yes",
+        "price":"35000",
+        "discount":"40"
+    },
+    {
+        "id": "30",
+        "song":"The unforgiven",
+        "artist":"Metallica",
+        "genre":"Metal",
+        "duration":"4:40",
+        "available":"No",
+        "price":"35000",
+        "discount":"40"
+    },
+    {
+        "id": "31",
+        "song":"I know",
+        "artist":"Fionna Apple",
+        "genre":"Pop",
+        "duration":"4:40",
+        "available":"Yes",
+        "price":"35000",
+        "discount":"40"
+    },
+    {
+        "id": "32",
+        "song":"Back to black",
+        "artist":"Amy Winehouse",
+        "genre":"Pop",
+        "duration":"4:40",
+        "available":"No",
+        "price":"35000",
+        "discount":"40"
+    },
+    {
+        "id": "33",
+        "song":"Nos siguen pegando abajo",
+        "artist":"Charly García",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"No",
+        "price":"32000",
+        "discount":"40"
+    },
+    {
+        "id": "34",
+        "song":"Hablando a tu corazón",
+        "artist":"Charly García",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"No",
+        "price":"32000",
+        "discount":"40"
+    },
+    {
+        "id": "35",
+        "song":"Canción para mi muerte",
+        "artist":"Charly García",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"No",
+        "price":"32000",
+        "discount":"40"
+    },
+    {
+        "id": "36",
+        "song":"Tu amor",
+        "artist":"Charly García",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"Si",
+        "price":"32000",
+        "discount":"30"
+    },
+    {
+        "id": "37",
+        "song":"Wish you were here",
+        "artist":"Pink Floyd",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"Si",
+        "price":"32000",
+        "discount":"30"
+    },
+    {
+        "id": "38",
+        "song":"Another brick in the wall",
+        "artist":"Pink Floyd",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"Yes",
+        "price":"32000",
+        "discount":"30"
+    },
+    {
+        "id": "39",
+        "song":"I don't want to miss a thing",
+        "artist":"Aerosmith",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"Yes",
+        "price":"32000",
+        "discount":"30"
+    },
+    {
+        "id": "40",
+        "song":"Dream on",
+        "artist":"Aerosmith",
+        "genre":"Rock",
+        "duration":"2:40",
+        "available":"Yes",
+        "price":"32000",
+        "discount":"30"
+    },
+    {
+        "id": "41",
+        "song":"Confortably numb",
+        "artist":"Pink Floyd",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"Yes",
+        "price":"34000",
+        "discount":"30"
+    },
+    {
+        "id": "42",
+        "song":"Money",
+        "artist":"Pink Floyd",
+        "genre":"Rock",
+        "duration":"4:40",
+        "available":"Yes",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "43",
+        "song":"Highway to hell",
+        "artist":"ACDC",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"Yes",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "44",
+        "song":"Back in black",
+        "artist":"ACDC",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"Yes",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "45",
+        "song":"Stand by me",
+        "artist":"ACDC",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"No",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "46",
+        "song":"Thunderstruck",
+        "artist":"ACDC",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"No",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "47",
+        "song":"TNT",
+        "artist":"ACDC",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"No",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "48",
+        "song":"I want to break free",
+        "artist":"Queen",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"No",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "49",
+        "song":"I love rock and roll",
+        "artist":"Joan Jett",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"No",
+        "price":"34000",
+        "discount":"35"
+    },
+    {
+        "id": "50",
+        "song":"I want it all",
+        "artist":"Joan Jett",
+        "genre":"Rock",
+        "duration":"4:50",
+        "available":"No",
+        "price":"34000",
+        "discount":"25" 
+    }
+
+
+
+
+]
