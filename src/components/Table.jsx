@@ -1,12 +1,13 @@
 import React, { useMemo } from "react";
 import styled from 'styled-components'
-import { useGlobalFilter, useSortBy, useTable} from 'react-table'
+import { useGlobalFilter, useFilters, useSortBy, useTable} from 'react-table'
 import { GlobalFilter } from "./GlobalFilter";
 import dataBase from '../components/db.json'
+import { ColumnFilter } from "./ColumnFilter";
 
 const Table = styled.table`
 color: white;
-margin: 0 auto;
+margin: 30px auto;
 border: none;
 border-radius: 5px;
 box-shadow: 0 0 10px gray;
@@ -77,40 +78,56 @@ export function Products(props) {
     const columns = useMemo(()=>[
         {
             Header: "Id",
-            accessor: "id"
+            accessor: "id",
+            Filter: ColumnFilter,
+            disableFilters: true
         },
         {
             Header: "Canción",
-            accessor: "song"
+            accessor: "song",
+            Filter: ColumnFilter,
+            disableFilters: true
         },
         {
             Header: "Artista",
-            accessor: "artist"
+            accessor: "artist",
+            Filter: ColumnFilter,
+            disableFilters: true
         },
         {
             Header: "Género",
-            accessor: "genre"
+            accessor: "genre",
+            Filter: ColumnFilter,
         },
         {
             Header: "Duración",
-            accessor: "duration"
+            accessor: "duration",
+            Filter: ColumnFilter,
+            disableFilters: true
         },
         {
             Header: "Disponible",
-            accessor: "available"
+            accessor: "available",
+            Filter: ColumnFilter,
+            disableFilters: true
         },
         {
             Header: "Precio",
-            accessor: "price"
+            accessor: "price",
+            Filter: ColumnFilter,
+            disableFilters: true
         },
         {
             Header: "Cantidad",
-            accessor: "amount"
+            accessor: "amount",
+            Filter: ColumnFilter,
+            disableFilters: true
+            
         }
     ], []);
 
 
-    const tableInstance = useTable({columns, data},useGlobalFilter, useSortBy );
+    const tableInstance = useTable({columns, data}, useFilters, useGlobalFilter, useSortBy );
 
     const { getTableProps, getTableBodyProps, headerGroups, rows,prepareRow, preGlobalFilteredRows, setGlobalFilter, state } = tableInstance
     
@@ -127,6 +144,7 @@ export function Products(props) {
             {headerGroup.headers.map((column)=>(
                 <TableHeader{...column.getHeaderProps(column.getSortByToggleProps())}>{column.render("Header")}
                 {column.isSorted ? (column.isSortedDesc ? "  ↓" : " ↑") : ""}
+                <div>{column.canFilter ? column.render('Filter'): null}</div>
                 </TableHeader>
             ))}
             </TableRow>
