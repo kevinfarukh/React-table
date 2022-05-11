@@ -18,6 +18,7 @@ const HeaderContainer = styled.div`
 const H1 = styled.h1`
     padding: 10px;
     margin: 0;
+    text-shadow: 0px 0px 5px #000;
     @media (max-width: 490px) {
         font-size: 1.5rem;
     }
@@ -25,6 +26,7 @@ const H1 = styled.h1`
 const Par = styled.p`
     padding: 0;
     margin: 0;
+    text-shadow: 0px 0px 5px #000;
 `
 const Flecha = styled.h3`
     padding: 0;
