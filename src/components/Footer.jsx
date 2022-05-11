@@ -9,20 +9,20 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     background-color: #333;
     color: #fff;
-    padding: 30px 0 80px;
+    padding: 30px 0 20px;
     
 `
 const H2 = styled.h2`
     padding: 0;   
-    margin: 20px 0;
+    margin: 10px 0;
 `
 const Par = styled.p`
     padding: 0;
     margin: 0;
 `
 const Imagen = styled.img`
-    width: 320px;
-    height: 400px;
+    width: 160px;
+    height: 180px;
     object-fit: cover;
     border-radius: 10px;
     margin: 20px auto;

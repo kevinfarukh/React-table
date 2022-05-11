@@ -8,20 +8,16 @@ const SearchContainer = styled.div`
     align-items: center;
     flex-direction: column;
     padding: 10px;
-`
-const SearchText = styled.h2`
-    text: gray;
-    
-`
+`;
 const Input = styled.input`
  margin: 105px 0 auto;
  height: 10px;
- width: 340px;
+ width: 300px;
  border: 1px solid gray;
  border-radius: 10px;
  outline: none;
  padding: 10px;
-`
+`;
 export function GlobalFilter({
     preGlobalFilteredRows,
     globalFilter,
@@ -40,4 +36,4 @@ export function GlobalFilter({
             onChange(e.target.value);
         }} placeholder={`🔎 Busca entre estas ${count} canciones... `}/>
     </SearchContainer>
-}
+};

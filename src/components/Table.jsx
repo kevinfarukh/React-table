@@ -5,6 +5,8 @@ import { GlobalFilter } from "./GlobalFilter";
 import dataBase from '../components/db.json'
 import { ColumnFilter } from "./ColumnFilter";
 
+
+
 const Table = styled.table`
 color: white;
 margin: 30px auto;
@@ -13,48 +15,45 @@ border-radius: 5px;
 box-shadow: 0 0 10px gray;
 background-color: #000;
 opacity: 0.93;
-@media (max-width: 668px) {
-    width: 100%;
-}
+position: relative;
+
 
 `
 const TableHead = styled.thead`
-margin: 0 auto;
-background-color: #444;
-@media (max-width: 668px) {
-    @media (max-width: 668px) {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    background-color: #444;
+    @media only screen and (max-width: 668px) {
+        position: sticky;
+        top: 106px;
     }
-    @media (max-width: 540px) {
-        font-size: 0.3rem;s
-    }
-    @media (max-width: 380px) {
-        justify-content: left;
-    }
-}
 `
 
 const TableRow = styled.tr`
-border-bottom: 1px solid gray;
-@media (max-width: 668px) {
-    display: flex;
+
+@media only screen and (max-width: 668px) {
+    
     justify-content: center;
     margin: 0;
     padding: 0;
+    font-size: 0.8rem;
 }
-@media (max-width: 540px) {
+@media only screen and (max-width: 540px) {
     font-size: 0.6rem;
     
 }
-@media (max-width: 380px) {
-    justify-content: left;
+@media only screen and (max-width: 380px) {
+    font-size: 0.5rem;
 }
 `
 
 const TableHeader = styled.th`
-padding: 8px 4px;
+padding: 10px 4px;
+position: sticky;
+top: 106px;
+background-color: #444;
+@media only screen and (max-width: 540px) {
+    padding: 10px 2px;
+    
+}
 
 `
 
@@ -66,12 +65,14 @@ const TableBody = styled.tbody`
 const TableData = styled.td`
 border-bottom: solid 1px #333;
 padding: 5px;
+@media only screen and (max-width: 540px) {
+    padding: 5px 0px;
+}
 
 `
 
 
 export function Products(props) {
-    
     const data = useMemo(() => 
         dataBase,[]
     );
