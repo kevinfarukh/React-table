@@ -1,10 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo } from "react";
 import styled from 'styled-components'
-import axios from 'axios'
 import { useGlobalFilter, useSortBy, useTable} from 'react-table'
 import { GlobalFilter } from "./GlobalFilter";
 import dataBase from '../components/db.json'
-import { ReactPropTypes } from "react";
 
 const Table = styled.table`
 color: white;
@@ -72,20 +70,6 @@ padding: 5px;
 
 
 export function Products(props) {
-    const[products, setProducts] = useState([]);
-
-    const fetchProducts = async () => {
-        const response = await axios.get('http://fakestoreapi.com/products').catch(err => console.log(err));
-
-        if(response){
-            const products = response.data;
-
-            console.log('Products: ', products);
-            setProducts(products);
-        }
-    };
-    
-    
     
     const data = useMemo(() => 
         dataBase,[]
@@ -96,60 +80,40 @@ export function Products(props) {
             accessor: "id"
         },
         {
-            Header: "Song",
+            Header: "Canción",
             accessor: "song"
         },
         {
-            Header: "Artist",
+            Header: "Artista",
             accessor: "artist"
         },
         {
-            Header: "Genre",
+            Header: "Género",
             accessor: "genre"
         },
         {
-            Header: "Duration",
+            Header: "Duración",
             accessor: "duration"
         },
         {
-            Header: "Available",
+            Header: "Disponible",
             accessor: "available"
         },
         {
-            Header: "Price",
+            Header: "Precio",
             accessor: "price"
         },
         {
-            Header: "Amount",
+            Header: "Cantidad",
             accessor: "amount"
         }
     ], []);
 
-    const productsData = useMemo(()=>[...products],[products]);
-    const productsColumns = useMemo(()=> products[0] ? Object.keys(products[0]).filter((key)=> key !== "rating").map((key)=>{
-        if(key === "image")
-            return {
-                Header: key,
-                accessor: key,
-                Cell: ({value}) => <img src={value} style={{maxWidth: "50px"}}/>
-            }
-       return {Header: key, accessor: key } 
-    }) :[], [products]);
 
-    const tableHooks = (hooks) =>{
-        hooks.visibleColumns.push((columns)=>[
-            ...columns,
-            
-        ])
-    }
-
-    const tableInstance = useTable({columns, data},useGlobalFilter, tableHooks, useSortBy );
+    const tableInstance = useTable({columns, data},useGlobalFilter, useSortBy );
 
     const { getTableProps, getTableBodyProps, headerGroups, rows,prepareRow, preGlobalFilteredRows, setGlobalFilter, state } = tableInstance
     
-    useEffect(()=>{
-        fetchProducts();
-        }, [])
 
     const isEven = (index) => index % 2 === 0;
 
@@ -172,7 +136,7 @@ export function Products(props) {
         {rows.map((row, index)=>{
             prepareRow(row);
 
-            return <TableRow {...row.getRowProps()} className={isEven(index)? "backgroundColor: #ddd": ""}>
+            return <TableRow {...row.getRowProps()} style={isEven(index)? {backgroundColor: "#222"} :{backgroundColor:"#000"}}>
 
                 {row.cells.map((cell, index)=>(
                 <TableData{...cell.getCellProps()}>
